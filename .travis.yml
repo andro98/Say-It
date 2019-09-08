@@ -1,5 +1,4 @@
 language: dart
-dist: windows
 addons:
   apt:
     packages:
@@ -13,6 +12,3 @@ script:
   - flutter packages get
   - flutter analyze --no-pub --no-current-package lib/ test/
   - flutter test --no-pub test/
-cache:
-  directories:
-    - ./.pub-cache
